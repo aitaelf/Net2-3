@@ -37,5 +37,7 @@ app.post('/post', (req, res) => {
 	}
 });
 
-console.log('Server enabled on port ' + port);
-app.listen(port);
+
+app.listen(port, () => {
+	console.log('Server enabled on port ' + port);
+});
